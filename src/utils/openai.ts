@@ -70,14 +70,14 @@ const createChatCompletion = async (
 	proxy?: string,
 ) => {
 	const { response, data } = await httpsPost(
-		'api.openai.com',
-		'/v1/chat/completions',
+		"api.chatanywhere.com.cn",
+		"/v1/chat/completions",
 		{
 			Authorization: `Bearer ${apiKey}`,
 		},
 		json,
 		timeout,
-		proxy,
+		proxy
 	);
 
 	if (
